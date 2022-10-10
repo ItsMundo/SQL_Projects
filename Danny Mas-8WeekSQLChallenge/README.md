@@ -6,7 +6,7 @@ This challenge, which all details can be found [here](https://8weeksqlchallenge.
 
 In an attempt to get more practice with SQL I've decided to tackle this challenge and document the process along the way to showcase within this repository. The challenge is designed around a case study per week for a total of 8 weeks. The following links are to each case study as well as the links to the folders in my repository showcasing my SQL Scripts and Analysis Journals. 
 
-* [Danny's Diner - Week 1]() | 
+* [Danny's Diner - Week 1](https://github.com/ItsMundo/SQL_Projects/tree/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201) | 
 
      *[Source](https://8weeksqlchallenge.com/case-study-1/)*
 * [Pizza Runner - Week 2]() | 
