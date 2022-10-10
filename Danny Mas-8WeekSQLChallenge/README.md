@@ -34,4 +34,4 @@ In an attempt to get more practice with SQL I've decided to tackle this challeng
 
 
 
-*The tool used for querying the data was primarily MySQL Workbench version 8.0.*
+*The tool used for querying the data was primarily MySQL Workbench version 8.0. A database entitled 8WkChallenge was created to house all of the data provided in the challenge.*
