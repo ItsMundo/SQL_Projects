@@ -30,3 +30,8 @@ In an attempt to get more practice with SQL I've decided to tackle this challeng
 * [Fresh Segments - Week 8]() | 
 
      *[Source](https://8weeksqlchallenge.com/case-study-8/)*
+
+
+
+
+*The tool used for querying the data was primarily MySQL Workbench version 8.0.*
