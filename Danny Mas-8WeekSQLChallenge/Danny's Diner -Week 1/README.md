@@ -19,7 +19,7 @@ Danny has shared with you 3 key datasets for this case study:
 
 # Entity Relationship Diagram
 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/ERD.JPG?token=GHSAT0AAAAAABZW7BPVEBAKMSP65F3KQYKYY2DY3OQ)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/ERD.JPG?token=GHSAT0AAAAAABZW7BPUK3KZKPQBCHPNN24WY2DZQEQ)
 
 ***As a personal preference, I decided to make a database to house all of the tables inside of it in MySQL Workbench. So for this weeks schema, I have annotated each table with a "w1_" and will do the same for the following weeks to come.***
 
@@ -94,7 +94,7 @@ GROUP BY
 ```
 We needed to do a join on this query because the customer_id is from the sales table and the price is from the menu table. The use of the SUM function was used find out the total amount of money spent and the GROUP BY function so that it would distribute all of the information by customer instead of just one row in the table. 
 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG?token=GHSAT0AAAAAABZW7BPU24436D2AR25PRWBGY2DY3WA)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG?token=GHSAT0AAAAAABZW7BPUX26XOVI7G5HWYDOOY2DZRUA)
 
 2. How many days has each customer visited the restaurant?
 ```SQL
@@ -111,7 +111,7 @@ ORDER BY
 
 The COUNT function was used in conjunction with DISTINCT to only count the singular days that each customer visited the restaurant.
 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q2.JPG?token=GHSAT0AAAAAABZW7BPV6YQFDLC7SFX6D4CGY2DY34A)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q2.JPG?token=GHSAT0AAAAAABZW7BPUCYQRM7BBSNIPQTQGY2DZRWQ)
 
 3. What was the first item from the menu purchased by each customer?
 ```SQL 
@@ -137,7 +137,7 @@ WHERE
 ```
 The use of common table expressions help with the organization of thought processes when tackling the query. Utilizing the window function ROW_NUMBER to add a count of the items by customer then limiting the output to only the first in the partition. 
 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q3.JPG?token=GHSAT0AAAAAABZW7BPUBC2K2PIDKXMNWRY2Y2DY4AA)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q3.JPG?token=GHSAT0AAAAAABZW7BPU5IPTKPNPRLW7J334Y2DZR4A)
 
 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 ```SQL
@@ -155,7 +155,7 @@ ORDER BY 2 DESC
 LIMIT 1;
 ```
 Using the COUNT function again, we can get a number of how many products were purchased and then GROUP BY on the joined menu table to see how many of each were sold by product name. Limiting the results to 1 since we are only interested in getting the most purchased item. 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q4.JPG?token=GHSAT0AAAAAABZW7BPUH6LKGXXOTF3W7DFMY2DY4FQ)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q4.JPG?token=GHSAT0AAAAAABZW7BPVGTZJQOYHCZXCFA42Y2DZR7A)
 
 
 5. Which item was the most popular for each customer?
@@ -180,7 +180,7 @@ FROM
 WHERE 
 	RNK = 1;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q5.JPG?token=GHSAT0AAAAAABZW7BPVTEIMRI6ZIK7GI7SAY2DY4LA)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q5.JPG?token=GHSAT0AAAAAABZW7BPUKSH3X6VGNKBMB4GIY2DZSCA)
 
 6. Which item was purchased first by the customer after they became a member?
 ```SQL
@@ -211,7 +211,7 @@ FROM
 WHERE 
 	RNK = 1;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q6.JPG?token=GHSAT0AAAAAABZW7BPVSXGOZPGQGFRMNZ3AY2DY4PQ)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q6.JPG?token=GHSAT0AAAAAABZW7BPUQLCMRN65LSZFIP2SY2DZSFQ)
 
 7. Which item was purchased just before the customer became a member?
 ```SQL
@@ -242,7 +242,7 @@ FROM
 WHERE 
 	RNK = 1;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q7.JPG?token=GHSAT0AAAAAABZW7BPUYJYYQLUZQJ5LM6UYY2DY4TA)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q7.JPG?token=GHSAT0AAAAAABZW7BPVNMQNAPJQOQGR4DMQY2DZSIQ)
 
 8. What is the total items and amount spent for each member before they became a member?
 ```SQL
@@ -272,7 +272,7 @@ FROM
 	TotalNonMemberPurchase
 ORDER BY customer;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q8.JPG?token=GHSAT0AAAAAABZW7BPVZ27H7LB5QZTRIGDWY2DY4WQ)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q8.JPG?token=GHSAT0AAAAAABZW7BPVF3IDHJNAFNRUCW3SY2DZSLQ)
 
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 ```SQL
@@ -301,7 +301,7 @@ SELECT
 FROM 
 	TotalMemberPts;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q9.JPG?token=GHSAT0AAAAAABZW7BPUQRGH3YJW2QK2ITMYY2DY43A)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q9.JPG?token=GHSAT0AAAAAABZW7BPVRBG723OFK4K26FYSY2DZSOA)
 
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 ```SQL
@@ -346,7 +346,7 @@ FROM
 	JanMemberPts
 ORDER BY customer;
 ```
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q10.JPG?token=GHSAT0AAAAAABZW7BPVXPAHHJSYC5OFPJWMY2DY47Q)
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q10.JPG?token=GHSAT0AAAAAABZW7BPUBS4CHTGY6R5Q2YA2Y2DZSRA)
 # Bonus Questions
 
 ## Join All The Things
@@ -377,4 +377,4 @@ LEFT JOIN
 ON
 	S.customer_id=MM.customer_id;
 ```
-![image]()
+![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/BonusQ.JPG?token=GHSAT0AAAAAABZW7BPUVG46RJEYDMHZ6ILWY2DZSVA)
