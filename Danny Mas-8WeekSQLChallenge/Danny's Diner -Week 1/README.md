@@ -154,7 +154,7 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 1;
 ```
-Using the COUNT function again, we can get a number of how many products were purchased and then GROUP BY on the joined menu table to see how many of each were sold by product name. 
+Using the COUNT function again, we can get a number of how many products were purchased and then GROUP BY on the joined menu table to see how many of each were sold by product name. Limiting the results to 1 since we are only interested in getting the most purchased item. 
 ![image](q4)
 
 
