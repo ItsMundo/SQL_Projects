@@ -224,3 +224,31 @@ SELECT
 FROM 
 	JanMemberPts
 ORDER BY customer;
+
+-- bonus questions
+-- Join All The Things
+
+SELECT
+	S.customer_id
+    ,S.order_date
+    ,M.product_name
+    ,M.price
+	,(CASE 
+		WHEN 
+			MM.join_date>S.order_date
+			THEN 'N'
+		WHEN
+			MM.join_date <= S.order_date
+			THEN 'Y'
+		ELSE'N'
+	END) AS 'member'
+FROM
+	w1_sales AS S
+LEFT JOIN
+	w1_menu AS M
+ON
+	S.product_id=M.product_id
+LEFT JOIN
+	w1_members AS MM
+ON
+	S.customer_id=MM.customer_id;
