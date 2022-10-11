@@ -19,7 +19,7 @@ Danny has shared with you 3 key datasets for this case study:
 
 # Entity Relationship Diagram
 
-![image](https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/ERD.JPG?token=GHSAT0AAAAAABZW7BPV32HCJW5MYR44UA74Y2EZ5AA)
+![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/ERD.JPG)
 
 ***As a personal preference, I decided to make a database to house all of the tables inside of it in MySQL Workbench. So for this weeks schema, I have annotated each table with a "w1_" and will do the same for the following weeks to come.***
 
