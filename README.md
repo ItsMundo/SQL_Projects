@@ -1,4 +1,4 @@
-# SQL_Projects
- This repository is to house all projects pertaining to expanding my SQL skills. 
+# SQL Projects
+ This repository houses all of the SQL scripts and their respective Analysis Journals to notate my thought processes as I go along the queries. 
 
-Feel free to browse each folder to view the various projects I have worked on or am currently working on. 
+Feel free to browse each folder to view completed and ongoing projects. 
