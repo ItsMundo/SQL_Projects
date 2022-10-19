@@ -154,7 +154,8 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 1;
 ```
-Using the COUNT function again, we can get a number of how many products were purchased and then GROUP BY on the joined menu table to see how many of each were sold by product name. Limiting the results to 1 since we are only interested in getting the most purchased item. 
+Using the COUNT function again, we can get a number of how many products were purchased and then GROUP BY on the joined menu table to see how many of each were sold by product name. Limiting the results to 1 since we are only interested in getting the most purchased item.
+
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q4.JPG)
 
 
@@ -180,6 +181,9 @@ FROM
 WHERE 
 	RNK = 1;
 ```
+
+Again using the window function of Rank, I was able to apply a rank on how many times each of the products were ordered by each customer and limit to the highest ranked product was. From the results it looks like Customer B has ordered the same amount of meals for each type indicating they have no preference as to most popular. 
+
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q5.JPG)
 
 6. Which item was purchased first by the customer after they became a member?
@@ -211,6 +215,9 @@ FROM
 WHERE 
 	RNK = 1;
 ```
+
+Using the Rank window function, applying the rank based on the order date regarding the customer ID I applied the condition where the order date was greater than the join date but also limiting to the first rank so that it only showed the first of each Member order. 
+
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q6.JPG)
 
 7. Which item was purchased just before the customer became a member?
@@ -242,6 +249,9 @@ FROM
 WHERE 
 	RNK = 1;
 ```
+
+Similar to the query from the previous question, the only difference was changing the Where clause to limit the order dates BEFORE the join date instead of AFTER. 
+
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q7.JPG)
 
 8. What is the total items and amount spent for each member before they became a member?
