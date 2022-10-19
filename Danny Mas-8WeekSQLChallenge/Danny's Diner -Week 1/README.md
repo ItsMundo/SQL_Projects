@@ -94,7 +94,7 @@ GROUP BY
 ```
 We needed to do a join on this query because the customer_id is from the sales table and the price is from the menu table. The use of the SUM function was used find out the total amount of money spent and the GROUP BY function so that it would distribute all of the information by customer instead of just one row in the table. 
 
-![image]([https://raw.githubusercontent.com/ItsMundo/SQL_Projects/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG?token=GHSAT0AAAAAABZW7BPUX26XOVI7G5HWYDOOY2DZRUA](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG)
+![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG)
 
 2. How many days has each customer visited the restaurant?
 ```SQL
