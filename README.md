@@ -12,4 +12,4 @@ Your friendly neihborhood Analyst!
 
 Ray
 
-![Example image](https://media.makeameme.org/created/my-sql-query.jpg=300x200)
+![My SQL query](https://media.makeameme.org/created/my-sql-query.jpg)
