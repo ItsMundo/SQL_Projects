@@ -1,4 +1,4 @@
-## Danny Ma's 8 Week Challenge for SQL
+## Danny Ma's 8 Week SQL Challenge 
 
 Danny Ma has a virtual appreniceship program and has been a great resource to the data community in regards to training and helping expand the analytical skills for anyone trying to get into Data Analytics. 
 
