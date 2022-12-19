@@ -64,19 +64,30 @@ The final `members` table captures the `join_date` when a `customer_id` joined t
 # Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
 
-1. What is the total amount each customer spent at the restaurant?
+[1. What is the total amount each customer spent at the restaurant?](#q-1)
 
-2. How many days has each customer visited the restaurant?
-3. What was the first item from the menu purchased by each customer?
-4. What is the most purchased item on the menu and how many times was it purchased by all customers?
-5. Which item was the most popular for each customer?
-6. Which item was purchased first by the customer after they became a member?
-7. Which item was purchased just before the customer became a member?
-8. What is the total items and amount spent for each member before they became a member?
-9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
-10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+[2. How many days has each customer visited the restaurant?](#q-2)
+
+[3. What was the first item from the menu purchased by each customer?](#q-3)
+
+[4. What is the most purchased item on the menu and how many times was it purchased by all customers?](#q-4)
+
+[5. Which item was the most popular for each customer?](#q-5)
+
+[6. Which item was purchased first by the customer after they became a member?](#q-6)
+
+[7. Which item was purchased just before the customer became a member?](#q-7)
+
+[8. What is the total items and amount spent for each member before they became a member?](#q-8)
+
+[9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?](#q-9)
+
+[10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?](#q-10)
+
+[11. Bonus Question](#q-11)
 
 # Solutions
+<a name="q-1"><a/>
 1. What is the total amount each customer spent at the restaurant?
 
 ```SQL
@@ -96,6 +107,7 @@ We needed to do a join on this query because the customer_id is from the sales t
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q1.JPG)
 
+<a name="q-2"><a/>
 2. How many days has each customer visited the restaurant?
 ```SQL
 SELECT 
@@ -113,6 +125,7 @@ The COUNT function was used in conjunction with DISTINCT to only count the singu
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q2.JPG)
 
+<a name="q-3"><a/>
 3. What was the first item from the menu purchased by each customer?
 ```SQL 
 WITH FirstPurchase AS
@@ -139,6 +152,7 @@ The use of common table expressions help with the organization of thought proces
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q3.JPG)
 
+<a name="q-4"><a/>
 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 ```SQL
 SELECT 
@@ -158,7 +172,7 @@ Using the COUNT function again, we can get a number of how many products were pu
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q4.JPG)
 
-
+<a name="q-5"><a/>
 5. Which item was the most popular for each customer?
 ```SQL
 WITH MostPopular AS
@@ -186,6 +200,7 @@ Again using the window function of Rank, I was able to apply a rank on how many 
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q5.JPG)
 
+<a name="q-6"><a/>
 6. Which item was purchased first by the customer after they became a member?
 ```SQL
 WITH FirstMemberPurchase AS
@@ -220,6 +235,7 @@ Using the Rank window function, applying the rank based on the order date regard
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q6.JPG)
 
+<a name="q-7"><a/>
 7. Which item was purchased just before the customer became a member?
 ```SQL
 WITH LastNonmemberPurchase AS
@@ -254,6 +270,7 @@ Similar to the query from the previous question, the only difference was changin
 
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q7.JPG)
 
+<a name="q-8"><a/>
 8. What is the total items and amount spent for each member before they became a member?
 ```SQL
 WITH TotalNonMemberPurchase AS
@@ -284,6 +301,7 @@ ORDER BY customer;
 ```
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q8.JPG)
 
+<a name="q-9"><a/>
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 ```SQL
 WITH TotalMemberPts AS
@@ -313,6 +331,7 @@ FROM
 ```
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q9.JPG)
 
+<a name="q-10"><a/>
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 ```SQL
 WITH JanMemberPts AS
@@ -357,9 +376,11 @@ FROM
 ORDER BY customer;
 ```
 ![image](https://github.com/ItsMundo/SQL_Projects/blob/main/Danny%20Mas-8WeekSQLChallenge/Danny's%20Diner%20-Week%201/Images/Q10.JPG)
-# Bonus Questions
 
-## Join All The Things
+<a name="q-11"><a/>
+11. Bonus Question
+
+Join All The Things
 The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 ```SQL
 SELECT
