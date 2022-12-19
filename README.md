@@ -1,4 +1,15 @@
 # SQL Projects
- This repository houses all of the SQL scripts and their respective Analysis Journals to notate my thought processes as I go along the queries. 
 
-Feel free to browse each folder to view completed and ongoing projects. 
+Hey there!
+
+Thanks for checking out my data analysis portfolio repository. Inside, you'll find a bunch of projects that showcase my SQL skills and other data analysis skills.
+
+Each folder in this repository contains a markdown report with all the details about a specific project. I tried to keep things interesting, so hopefully, you won't fall asleep while reading them.
+
+If you have any questions or just want to chat about data analysis, feel free to reach out. I'm always down for a good conversation (or a bad one, I'm not picky).
+
+Your friendly neihborhood Analyst!
+
+Ray
+
+![Example image](https://media.makeameme.org/created/my-sql-query.jpg=300x200)
